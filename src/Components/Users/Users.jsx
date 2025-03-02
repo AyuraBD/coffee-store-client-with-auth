@@ -50,6 +50,7 @@ const Users = () => {
                 <th>Name</th>
                 <th>Email</th>
                 <th>Joining date</th>
+                <th>Last sing in at</th>
                 <th>Action</th>
               </tr>
             </thead>
@@ -59,6 +60,7 @@ const Users = () => {
                 <td>{user.name}</td>
                 <td>{user.email}</td>
                 <td>{user.createdAt}</td>
+                <td>{user.lastSignInTime}</td>
                 <td className='flex gap-2'>
                   <span className='cursor-pointer bg-gray-400 text-white p-2 rounded-md'>Edit</span>
                   <span onClick={() => handleDeleteUser(user._id)} className='cursor-pointer bg-red-400 text-white p-2 rounded-md'>Delete</span>
