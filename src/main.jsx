@@ -13,8 +13,13 @@ import Signin from './Components/Signin/Signin.jsx'
 import Users from './Components/Users/Users.jsx'
 
 import AuthProviders from './Providers/AuthProviders.jsx'
+import Home from './Home.jsx'
 
 const router = createBrowserRouter([
+  {
+    path: '/',
+    element: <Home></Home>
+  },
   {
     path: "/coffee",
     element: <App></App>,
