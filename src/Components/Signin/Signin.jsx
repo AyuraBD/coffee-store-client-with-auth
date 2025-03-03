@@ -18,7 +18,7 @@ const Signin = () => {
       form.reset();
       const lastSignInTime = result?.user?.metadata?.lastSignInTime;
       const loginInfo = { email, lastSignInTime };
-      fetch(`https://coffee-store-server-rust-gamma.vercel.app/users`,{
+      fetch(`https://coffee-store-server-two-ruddy.vercel.app/users`,{
         method: 'PATCH',
         headers: {
           'Content-Type': 'application/json'

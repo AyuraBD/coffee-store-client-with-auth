@@ -19,7 +19,7 @@ const Signup = () => {
       form.reset(); 
       
       // Save new user to the database
-      fetch('https://coffee-store-server-rust-gamma.vercel.app/users',{
+      fetch('https://coffee-store-server-two-ruddy.vercel.app/users',{
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'

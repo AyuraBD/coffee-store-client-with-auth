@@ -23,7 +23,7 @@ const router = createBrowserRouter([
   {
     path: "/coffee",
     element: <App></App>,
-    loader: () => fetch('https://coffee-store-server-rust-gamma.vercel.app/coffee')
+    loader: () => fetch('https://coffee-store-server-two-ruddy.vercel.app/coffee')
   },
   {
     path:'/addCoffee',
@@ -32,7 +32,7 @@ const router = createBrowserRouter([
   {
     path:'/updateCoffee/:id',
     element: <UpdateCoffee></UpdateCoffee>,
-    loader: ({params}) => fetch(`https://coffee-store-server-rust-gamma.vercel.app/coffee/${params.id}`)
+    loader: ({params}) => fetch(`https://coffee-store-server-two-ruddy.vercel.app/coffee/${params.id}`)
   },
   {
     path:'/signup',
@@ -45,7 +45,7 @@ const router = createBrowserRouter([
   {
     path: '/users',
     element:<Users></Users>,
-    loader: () => fetch('https://coffee-store-server-rust-gamma.vercel.app/users')
+    loader: () => fetch('https://coffee-store-server-two-ruddy.vercel.app/users')
   }
 ])
 

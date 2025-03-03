@@ -18,7 +18,7 @@ const Users = () => {
     }).then((result) => {
       if (result.isConfirmed) {
         //Delete from the database
-        fetch(`https://coffee-store-server-rust-gamma.vercel.app/users/${id}`, {
+        fetch(`https://coffee-store-server-two-ruddy.vercel.app/users/${id}`, {
           method: 'DELETE'
         })
         .then(res => res.json())

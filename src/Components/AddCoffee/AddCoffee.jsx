@@ -13,7 +13,7 @@ const AddCoffee = () => {
     const photo = form.photo.value;
     const newCoffee = {name, chef, supplier, taste, category, details, photo}
     
-    fetch('https://coffee-store-server-rust-gamma.vercel.app/coffee', {
+    fetch('https://coffee-store-server-two-ruddy.vercel.app/coffee', {
       method: 'POST',
       headers: {
         'content-type' : 'application/json'
